@@ -1,6 +1,6 @@
 listaAprovados = []
 
-with open(file="data/estudantes/lista_notas.txt") as alunosFile:
+with open(file="data/estudantes/lista_notas.txt", mode="r") as alunosFile:
     for line in alunosFile:
         student_grade = line
         student_grade = student_grade.split(" ")
